@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea2 grid</title>
+    <style>
+        .grid-container{
+            width: 100%;
+            height: 700px;
+            background-color: black;
+
+            /*modulo grid*/
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr .5fr 2fr 1fr 1fr;
+            gap: 10px;
+        }
+        .item1{
+            background-color: slategray;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .item2{
+            background-color: lightsteelblue;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .item3{
+            background-color: silver;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .item4{
+            background-color: lightgrey;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .item5{
+            background-color: thistle;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .item6{
+            background-color: whitesmoke;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 5;
+
+        }
+        .item7{
+            background-color: darkgray;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+
+
+        @media screen and (max-width: 720px){
+            .grid-container{
+                grid-template-columns: 1fr;
+                grid-template-rows: 150px 50px 300px 150px 150px 200px 150px;
+            }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .item2{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .item3{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .item4{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .item5{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .item6{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 6;
+            grid-row-end: 7;
+        }
+        .item7{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        }
+    </style>
+</head>
+<body>
+    <section class="grid-container">
+        <div class="grid-item item1">HEADER</div>
+        <div class="grid-item item2">NAV</div>
+        <div class="grid-item item3">MAIN</div>
+        <div class="grid-item item4">MAIN2</div>
+        <div class="grid-item item5">MAIN3</div>
+        <div class="grid-item item6">ASIDE</div>
+        <div class="grid-item item7">FOOTER</div>
+
+    </section>
+</body>
+</html>
